@@ -21,9 +21,9 @@ dependencies:
   conditions:
     names:
       - 'npm://gulp-clean-css'
+      - 'maven://org.projectlombok:lombok'
+
   warnings:
-    imports:
-      names: './dependency-warnings.txt'
     ids:
       - Other
       - NA
