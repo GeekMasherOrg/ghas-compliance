@@ -4,8 +4,8 @@ codescanning:
   level: error
   conditions:
     ids:
-      - */sql-injection
-      - */xss
+      - "*/sql-injection"
+      - "*/xss"
  
 dependabot:
   level: moderate
