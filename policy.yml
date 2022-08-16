@@ -1,0 +1,32 @@
+name: GeekMasherOrg Default Policy
+
+codescanning:
+  level: error
+  conditions:
+    ids:
+      - */sql-injection
+      - */xss
+ 
+dependabot:
+  level: moderate
+
+licensing:
+  conditions:
+    ids:
+      - GPL-*
+      - LGPL-*
+      - AGPL-*
+
+dependencies:
+  conditions:
+    names:
+      - 'npm://gulp-clean-css'
+  warnings:
+    imports:
+      names: './dependency-warnings.txt'
+    ids:
+      - Other
+      - NA
+
+secretscanning:
+  level: all
